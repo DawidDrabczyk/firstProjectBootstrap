@@ -6,4 +6,30 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.hero-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.pink-color{
+    color: rgb(202, 29, 110);
+}
+
+/* nawigacja */
+
+.navbar-brand{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.nav-link, .navbar-toogler-icon{
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
