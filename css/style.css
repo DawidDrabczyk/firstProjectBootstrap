@@ -25,7 +25,7 @@ body{
 }
 
 .pink-color{
-    color: rgb(202, 29, 110);
+    color: rgb(248, 6, 99);
 }
 
 /* nawigacja */
@@ -33,6 +33,8 @@ body{
 .navbar-brand{
     font-size: 1.8rem;
     text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 10px 30px black;
 }
 
 .nav-link, .navbar-toogler-icon{
@@ -55,10 +57,17 @@ body{
     padding: 1em 2em;
     text-transform: uppercase;
     font-size: 1.4rem;
+    text-shadow: 3px 5px 10px rgb(248, 6, 99);
+}
+
+.welcome-headline{
+    font-size: 3rem;
+    text-shadow: 0 0 10px black;
 }
 
 .welcome-text{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 2px rgb(248, 6, 99);
 }
 
 /* sekcja o nas */
@@ -67,15 +76,32 @@ body{
     font-size: 2.4rem;
     font-weight: bold;
     text-transform: uppercase;
+    text-shadow: 0 0 2px black;
 }
 
 .aboutus-icon{
     font-size: 4rem;
+    text-shadow: 0 0 2px black;
+}
+
+.aboutus-text{
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+
+.aboutus-description{
+    font-size: 2rem;
+    text-shadow: 0 0 1px black;
 }
 
 .accordion-button{
-    padding: 1em;
-    font-size: 1.8rem;
+    padding: 1.5em;
+    font-size: 1.5rem;
+}
+
+.accordion-body{
+    font-size: 1rem;
 }
 
 .accordion-button:not(.collapsed){
@@ -89,15 +115,34 @@ body{
     background-color: rgb(248, 248, 248);
 }
 
+.team-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+}
+
+.team-description{
+    font-size: 1.2rem;
+}
+
 .team .card-title{
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(248, 6, 99);
 }
 
 .team .card-text{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 /* kontakt */
+
+.contact-info{
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(248, 6, 99);
+}
 
 .contact h3{
     font-weight: bold;
@@ -105,10 +150,99 @@ body{
     font-size: 2rem;
 }
 
+.contact .adress{
+    font-size: 1.2rem;
+}
+
+.contact i{
+    font-size: 1.5rem;
+}
+
 .contact .submit-btn{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .form-control{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
+
+/* media query */ 
+
+
+@media (min-width: 576px){
+    
+    .navbar-brand{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:768px){
+    
+    .welcome-headline{
+        font-size: 4rem;
+    }
+    .aboutus-description{
+        font-size: 2.8rem;
+    }
+    .team-title{
+        font-size: 2.8rem;
+    }
+    .contact-info{
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width:992px){
+    
+    .aboutus-box{
+        height: 380px;
+    }
+    .aboutus-text{
+        font-size: 1.4rem;
+    }
+    .team-description{
+        font-size: 1.4rem;
+    }
+    .team .card-title{
+        font-size: 3rem;
+    }
+    .team .card-text{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:1200px){
+    
+    .accordion-button{
+        font-size: 1.8rem;
+    }
+    .accordion-body{
+        font-size: 1.3rem;
+    }
+    .team-description{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1400px){
+
+    .welcome-headline{
+        font-size: 6rem;
+    }
+    .welcome-text{
+        font-size: 2.5rem;
+    }
+    .aboutus-box{
+        height: 480px;
+    }
+    .aboutus-box h3{
+        font-size: 2.7rem;
+    }
+    .aboutus-box i{
+        font-size: 5rem;
+    }
+    .aboutus-text{
+        font-size: 1.3rem;
+    }
+}
+
